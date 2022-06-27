@@ -1,0 +1,56 @@
+/** this is a data set that i found and wanted to give it a try **/
+
+
+
+CREATE TABLE PetOwners (id INTEGER PRIMARY KEY,firstname TEXT,lastname TEXT, Phonenumber NUMERIC, petname TEXT);
+
+INSERT INTO PetOWners VALUES (1,"Debbie","Ward","804-674-8462", "Gracie");
+INSERT INTO PetOWners VALUES (2,"Hamed","Hassan","804-236-6717", "Snickers");
+INSERT INTO PetOWners VALUES (3,"Sam","Bethel","804-559-1750", "Paris");
+INSERT INTO PetOWners VALUES (4,"John","Ziminsky","804-751-4052", "Boris");
+INSERT INTO PetOWners VALUES (5,"Robert","DeCosta","804-236-4121", "Bess");
+INSERT INTO PetOWners VALUES (6,"Michelle","Kim","804-323-0291", "Yeezie");
+INSERT INTO PetOWners VALUES (7,"Joseph","Heckler","804-550-3050", "Midas");
+INSERT INTO PetOWners VALUES (8,"Liz","Sorrento","804-751-1270", "Checkers");
+INSERT INTO PetOWners VALUES (9,"Jessica","Picard","804-559-0909", "Guenther");
+INSERT INTO PetOWners VALUES (10,"Carmen","Sanchez","804-674-5991", "Roger");
+INSERT INTO PetOWners VALUES (11,"Ashish","Mittal","804-553-4737", "Flash");
+INSERT INTO PetOWners VALUES (12,"Liz","Sorrento","804-751-1270", "Chess");
+INSERT INTO PetOWners VALUES (13,"Paul","Novick","804-550-1164", "Hillary");
+INSERT INTO PetOWners VALUES (14,"Carmen","Sanchez","804-674-9191", "Hammer");
+
+SELECT * FROM PetOWners;
+
+CREATE TABLE Pets (id INTEGER PRIMARY KEY,petname TEXT,type TEXT, MicrochipID NUMERIC, petage INTEGER,petbirthdate NUMERIC);
+
+INSERT INTO Pets VALUES (1,"Gracie","cat","Mak755610",10,"06/15/10");
+INSERT INTO Pets VALUES (2,"Snickers","dog","RIC75519",9,"05/18/11");
+INSERT INTO Pets VALUES (3,"Paris","cat","SMI75388",8,"08/24/12");
+INSERT INTO Pets VALUES (4,"Boris","cat","TEA75628",8,"10/01/12");
+INSERT INTO Pets VALUES (5,"Bess","pig","YAM75356",6,"9/10/14");
+INSERT INTO Pets VALUES (6,"Yeezie","cat","HIR75215",5,"9/9/15");
+INSERT INTO Pets VALUES (7,"Midas","dog","ASH75344",4,"3/31/16");
+INSERT INTO Pets VALUES (8,"Checkers","dog","MIL75123",3,"6/15/17");
+INSERT INTO Pets VALUES (9,"Guenther","dog","ROC75453",3,"9/20/17");
+INSERT INTO Pets VALUES (10,"Roger","rabbit","BRA75452",2,"3/11/18");
+INSERT INTO Pets VALUES (11,"Flash","ferret","BUR75592",2,"4/8/18");
+INSERT INTO Pets VALUES (13,"Chess","dog","SHA75222",2,"6/17/18");
+INSERT INTO Pets VALUES (14,"Hillary","bird","MEN75411",1,"9/10/19");
+INSERT INTO Pets VALUES (15,"Hammer","hamster","BAR75441",1,"9/15/19");
+
+SELECT * FROM Pets
+
+
+/** finding duplicates **/
+
+SELECT firstname, COUNT (firstname)
+FROM PetOwners
+GROUP BY firstname
+HAVING COUNT(firstname) > 1;
+
+/**  put in order **/
+SELECT * FROM Pets
+ORDER BY type;
+
+SELECT * FROM PetOWners
+ORDER BY firstname;

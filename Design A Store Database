@@ -1,0 +1,42 @@
+/** Paris Jewelery Boutique:
+Gold Necklace(3)
+Silver Necklace (1)
+I Love MOM Necklace(1)
+Elephant Necklace(5)
+Infinity Ring(6)
+Heart Ring(9)
+Silver Ring(11)
+1.5 Carat Diamond Ring(1)
+Gold Ring(2)
+Round Diamond Studs(10)
+Square Diamond Studs (10)
+Gold Anklet (5)
+Silver Anklet (9)
+Charm Bracelet (8)
+Airplane Charm(26)
+Letter Charm (100)
+Diamond Choker(15)
+**/
+
+CREATE TABLE ParisJewelryBoutique (id INTEGER PRIMARY KEY,item TEXT, quantity INTEGER, reviews INTEGER, price INTEGER);
+
+INSERT INTO ParisJewelryBoutique VALUES (1,"Gold Necklace",3,5,50.00);
+INSERT INTO ParisJewelryBoutique VALUES (2,"Silver Necklace",1,4,10.00);
+INSERT INTO ParisJewelryBoutique VALUES (3,"I Love MOM Necklace",1,5,15.00);
+INSERT INTO ParisJewelryBoutique VALUES (4,"Elephant Necklace",5,4,10.00);
+INSERT INTO ParisJewelryBoutique VALUES (5,"Infinity Ring",6,1,5.00);
+INSERT INTO ParisJewelryBoutique VALUES (6,"Heart Ring",9,5,20.00);
+INSERT INTO ParisJewelryBoutique VALUES (7,"Silver Ring",11,4,17.00);
+INSERT INTO ParisJewelryBoutique VALUES (8,"1.5 Carat Diamond Ring",1,5,150.00);
+INSERT INTO ParisJewelryBoutique VALUES (9,"Gold Ring",2,4.8,40.00);
+INSERT INTO ParisJewelryBoutique VALUES (10,"Round Diamond Studs",10,5,90.00);
+INSERT INTO ParisJewelryBoutique VALUES (11,"Square Diamond Studs",10,5,90.00);
+INSERT INTO ParisJewelryBoutique VALUES (12,"Gold Anklet",5,3.9,9.00);
+INSERT INTO ParisJewelryBoutique VALUES (13,"Silver Anklet",9,2,9.00);
+INSERT INTO ParisJewelryBoutique VALUES (14,"Charm Bracelet",8,5,25.00);
+INSERT INTO ParisJewelryBoutique VALUES (15,"Airplane Charm",26,3,13.00);
+INSERT INTO ParisJewelryBoutique VALUES (16,"Letter Charm",100,4.6,13.00);
+INSERT INTO ParisJewelryBoutique VALUES (17,"Diamond Choker",15,5,75.00);
+
+SELECT * FROM ParisJewelryBoutique;
+SELECT * FROM ParisJewelryBoutique ORDER BY price Desc

@@ -1,21 +1,4 @@
-/** Paris Jewelery Boutique:
-Gold Necklace(3)
-Silver Necklace (1)
-I Love MOM Necklace(1)
-Elephant Necklace(5)
-Infinity Ring(6)
-Heart Ring(9)
-Silver Ring(11)
-1.5 Carat Diamond Ring(1)
-Gold Ring(2)
-Round Diamond Studs(10)
-Square Diamond Studs (10)
-Gold Anklet (5)
-Silver Anklet (9)
-Charm Bracelet (8)
-Airplane Charm(26)
-Letter Charm (100)
-Diamond Choker(15)
+/** This was a khan academy project for course intro to SQL.In this project i had to create my own store.
 **/
 
 CREATE TABLE ParisJewelryBoutique (id INTEGER PRIMARY KEY,item TEXT, quantity INTEGER, reviews INTEGER, price INTEGER);
